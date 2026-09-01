@@ -1,1 +1,212 @@
 # Resume
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional | Data & BI</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+
+        nav {
+            background-color: #1a252f;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .grid-projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skills-list li {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>[Tu Nombre Completo]</h1>
+        <p>Analista de Datos | Especialista en BI & ETL | Operaciones</p>
+    </header>
+
+    <nav>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Soy un profesional especializado en Análisis de Datos, procesos ETL e Inteligencia de Negocios, con una sólida trayectoria en validación de datos, soporte de TI y administración de infraestructura. Mi enfoque se centra en transformar datos complejos en tableros interactivos e información accionable para optimizar la toma de decisiones, con experiencia comprobada en el sector bancario y gubernamental.</p>
+            <br>
+            <h3>Habilidades Técnicas</h3>
+            <br>
+            <ul class="skills-list">
+                <li>SQL / Bases de Datos</li>
+                <li>Pipelines ETL</li>
+                <li>Business Intelligence (BI)</li>
+                <li>Gestión de Incidentes IT</li>
+                <li>Arquitectura Empresarial (TOGAF, Zachman)</li>
+                <li>Análisis Estadístico</li>
+            </ul>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia Destacada</h2>
+            <ul>
+                <li><strong>Desarrollo de Plataformas Internas:</strong> Diseño e implementación de herramientas para eliminar redundancias en el manejo de datos, mejorando la eficiencia operativa.</li>
+                <li><strong>Operaciones y Soporte IT:</strong> Gestión remota de incidentes, administración de bases de datos relacionales y mantenimiento de infraestructura crítica.</li>
+                <li><strong>Middle Office & Reporting:</strong> Preparación de reportes de operaciones de inversión y cruce de validación de datos a gran escala.</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="grid-projects">
+                <div class="project-card">
+                    <h3>Dashboard Interactivo de Negocios</h3>
+                    <p>Desarrollo de un panel de visualización utilizando herramientas de BI para monitorear KPIs en tiempo real, permitiendo a los tomadores de decisiones identificar cuellos de botella en la operación.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Automatización de Pipeline ETL</h3>
+                    <p>Diseño y ejecución de un proceso de Extracción, Transformación y Carga (ETL) para limpiar e integrar grandes volúmenes de datos dispersos en un repositorio centralizado.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Modelo de Simulación y Análisis</h3>
+                    <p>Aplicación de estadística avanzada y teoría de probabilidad para calcular intervalos de confianza y dimensionamiento de muestras en procesos de auditoría de datos.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="contacto">
+        <h2>¿Trabajamos juntos?</h2>
+        <p>Contáctame a través de mis redes profesionales:</p>
+        <br>
+        <p>
+            <a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a> | 
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+        </p>
+        <br>
+        <p>&copy; 2026 [Tu Nombre]. Creado para GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
